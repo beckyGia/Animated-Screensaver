@@ -1,0 +1,28 @@
+html, body {
+  margin: 0;
+}
+ 
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  height: inherit;
+}
+
+h1 {
+  font-size: 2rem;
+  letter-spacing: -1px;
+  /* position is absolute because we don't want any text on the page interfering with our bouncy balls - we want the bouncing balls to be able to roam freely without interfering with anything else*/
+  position: absolute;
+  margin: 0;
+  top: -4px;
+  right: 5px;
+
+  /* We are going to add a shadow, we want ghost text*/
+  color: transparent;
+  /* offset-x | offset-y | blur-radius | color */
+  text-shadow: 0 0 4px white;
+}
